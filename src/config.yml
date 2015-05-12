@@ -1,0 +1,4 @@
+Messages:
+  show-motd: true
+  motd: "Default message of the &b&lDay!"
+  pingmotd: "Motd."

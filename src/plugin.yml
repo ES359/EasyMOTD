@@ -1,0 +1,38 @@
+name: EasyMOTD
+main: me.ES359.EasyMOTD.EMotd
+version: 1.0
+description: See command description Lol.
+authors: [ES359]
+
+commands:
+  emlist:
+    description: Lists the currently set messages.
+    aliases: [elist, messagelist, mlist]
+  emset:
+    description: Sets the In-game message.
+    aliases: [set,eset]
+  emsetlist:
+    description: Sets the server list message.
+
+  easymotd:
+    description: Main command for plugin.
+    aliases: [em]
+
+
+permissions:
+  easymotd.*:
+    description: Permits usage of all commands
+    children:
+      easymotd.command: true
+      easymotd.help: true
+      easymotd.permissions: true
+      easymotd.commands: true
+      easymotd.list: true
+      easymotd.setmotd: true
+      easymotd.setlist: true
+      easymotd.config: true
+    default: op
+
+
+
+
