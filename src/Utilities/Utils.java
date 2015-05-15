@@ -1,9 +1,11 @@
 package Utilities;
 
+import me.ES359.EasyMOTD.EMotd;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 
 import java.sql.SQLException;
 /**
@@ -167,7 +169,7 @@ public class Utils extends Timestamp {
         return getPrefix() + color(message + ", " + setThePermission(permission));
     }
 
-    public String getStaff()
+    public String getStaff(Plugin plugin)
     {
         StringBuilder sb = new StringBuilder();
         for(Player p : Bukkit.getServer().getOnlinePlayers())
@@ -177,6 +179,10 @@ public class Utils extends Timestamp {
                 sb.append(p.getName() + ", ");
             }
         }
+        if(sb.length() < 1)
+            return color(plugin.getConfig().getString("Messages.StaffNotOnline"));
+            //return color("&cError: No staff members online. &b&o.-.");
+        else
         return ""+sb.toString();
     }
 

@@ -28,7 +28,7 @@ public class Join implements Listener
 
         config = config.replaceAll("%newline%","\n");
         config = config.replaceAll("%player%",p.getName());
-        config = config.replaceAll("%staff%",util.getStaff());
+        config = config.replaceAll("%staff%",util.getStaff(main));
         config = config.replaceAll("%users%",util.getUsers());
         config = config.replaceAll("%time%",""+util.getStamp());
         if(this.main.isJoinEnabled())

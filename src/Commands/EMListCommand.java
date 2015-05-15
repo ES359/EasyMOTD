@@ -35,7 +35,7 @@ public class EMListCommand implements CommandExecutor {
             *
             */
            sender.sendMessage(utils.color("&b========[&eMessages&b]======="));
-           sender.sendMessage("Staff online: "+utils.getStaff());
+           sender.sendMessage("Staff online: "+utils.getStaff(main));
            sender.sendMessage(utils.color("&6In-game message: &f"+this.main.getConfig().getString("Messages.motd")));
            sender.sendMessage(utils.color("&6PingList Message: &f"+this.main.getConfig().getString("Messages.pingmotd")));
            sender.sendMessage(utils.color("&b========================"));

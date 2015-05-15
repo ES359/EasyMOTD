@@ -32,7 +32,3 @@ permissions:
       easymotd.setlist: true
       easymotd.config: true
     default: op
-
-
-
-

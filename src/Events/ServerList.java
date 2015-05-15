@@ -24,7 +24,7 @@ public class ServerList implements Listener
         String pingmessage = this.main.getConfig().getString("Messages.pingmotd");
         pingmessage = pingmessage.replaceAll("&", "\u00A7");
         pingmessage = pingmessage.replaceAll("%newline%", "\n");
-        pingmessage = pingmessage.replaceAll("%staff%",util.getStaff());
+        pingmessage = pingmessage.replaceAll("%staff%",util.getStaff(main));
         pingmessage = pingmessage.replaceAll("%users%",util.getUsers());
         pingmessage = pingmessage.replaceAll("%time%",""+util.getStamp());
         event.setMotd(pingmessage);

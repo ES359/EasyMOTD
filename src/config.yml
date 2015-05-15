@@ -1,4 +1,5 @@
 Messages:
   show-motd: true
-  motd: "Default message of the &b&lDay!"
-  pingmotd: "Motd."
+  motd: "&9Welcome &a&o%player%, &7to the &6Server!%newline%&e&lStaff-Online: &6&o%staff%"
+  pingmotd: "&b&lWelcome! &e&lCurrent Time: &6&o%time%"
+  StaffNotOnline: "&cError: No staff members online. &b&o.-."
